@@ -1,6 +1,7 @@
 
 import './navbar.css'
 import CartWidget from "../CartWidget/CartWidget"
+import { Navbar } from 'react-bootstrap'
 export const NavBar = () =>{
     return (
         <header>
@@ -16,3 +17,4 @@ export const NavBar = () =>{
         </header>
     )
 }
+export default NavBar
