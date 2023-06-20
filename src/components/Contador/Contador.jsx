@@ -1,3 +1,5 @@
+
+import './Contador.css'
 import {useState, useEffect} from "react"
 const Contador = ({stock, inicial}) => {
     const [contador, setContador] = useState(inicial);
@@ -26,12 +28,12 @@ const Contador = ({stock, inicial}) => {
     }
   return (
     <div>
-        <h3>Mi contador</h3>
-        <button onClick = {decrementar}> - </button>
-        <strong> {contador}</strong>
-        <button onClick = {incrementar}> + </button>
         
-        <button onClick = {agregarAlCarrito}style={{color:color}}>Agregar al carrito </button>
+        <button className= "boton" onClick = {decrementar}> - </button>
+        <strong> {contador}</strong>
+        <button className= "boton"onClick = {incrementar}> + </button>
+        
+        <button className= "boton"onClick = {agregarAlCarrito}style={{color:color}}>Agregar al carrito </button>
     </div>
   )
 }

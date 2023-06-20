@@ -5,12 +5,12 @@ import { Navbar } from 'react-bootstrap'
 export const NavBar = () =>{
     return (
         <header>
-            <h1>Todo BB.com</h1>
+            <h1>Todo Florencia Bonelli.com</h1>
             <nav>
                 <ul>
-                    <li>Ropa</li>
-                    <li>Accesorios</li>
-                    <li>Rodados</li>
+                    <li>Libros</li>
+                    <li>e books</li>
+                    <li>Audio libros</li>
                 </ul>
             </nav>    
             <CartWidget/>

@@ -1,0 +1,36 @@
+
+body {
+    
+    background-attachment: sticky;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    
+}
+.card{
+    width: 12 vh; 
+    height: auto;
+    margin: 4% auto; 
+    background: rgb(203,174,238);
+    background: radial-gradient(circle, rgba(203,174,238,1) 0%, rgba(148,233,203,0.989233193277311) 100%);
+}
+.fotoTapa{
+    padding: 1%;
+    width: 10vh;
+    height: auto;
+}
+.flexContainer{
+    display: inline-block;
+    padding: 1%
+}
+
+.center{
+    text-align: center;
+}
+.boton{
+    
+    background-color: #a567f1;
+    border-radius: 10%;
+    border-color: none;
+    color: white;  
+    justify-content: center;
+}
