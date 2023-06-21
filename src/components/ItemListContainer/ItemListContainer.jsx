@@ -2,7 +2,7 @@ import "./ItemListContainer.css"
 import { useState, useEffect } from "react";
 import { getProductos } from "../../asyncmock";
 import ItemList from "../itemList/itemList";
-const ItemListCOntainer = ({greeting}) => {
+const ItemListContainer = ({greeting}) => {
   const [productos, setProductos ] = useState([]);
   
   useEffect( () => {
@@ -23,4 +23,4 @@ const ItemListCOntainer = ({greeting}) => {
   )
 }
 
-export default ItemListCOntainer
+export default ItemListContainer

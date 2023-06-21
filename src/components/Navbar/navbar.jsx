@@ -1,10 +1,10 @@
 
 import './navbar.css'
 import CartWidget from "../CartWidget/CartWidget"
-import { Navbar } from 'react-bootstrap'
+
 export const NavBar = () =>{
     return (
-        <header>
+        <navBar>
             <h1>Todo Florencia Bonelli.com</h1>
             <nav>
                 <ul>
@@ -14,7 +14,7 @@ export const NavBar = () =>{
                 </ul>
             </nav>    
             <CartWidget/>
-        </header>
+        </navBar>
     )
 }
 export default NavBar

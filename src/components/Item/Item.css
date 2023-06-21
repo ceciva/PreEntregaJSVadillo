@@ -20,17 +20,12 @@ body {
 }
 .flexContainer{
     display: inline-block;
+    justify-content: space-between;
     padding: 1%
 }
-
-.center{
-    text-align: center;
-}
-.boton{
-    
+/* .boton{
     background-color: #a567f1;
     border-radius: 10%;
-    border-color: none;
     color: white;  
     justify-content: center;
-}
+} */
