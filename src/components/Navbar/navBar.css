@@ -1,12 +1,11 @@
 
 
-navBar {
+.navBar {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: radial-gradient(circle, rgba(238,174,202,.5) 0%, rgba(148,187,233,.5) 100%);
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-bottom: 1px solid black;
     position: sticky
 }
 li{

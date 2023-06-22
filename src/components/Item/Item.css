@@ -6,23 +6,21 @@ body {
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     
 }
+.contenedorCards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
 .card{
-    width: 12 vh; 
-    height: auto;
-    margin: 4% auto; 
     background: rgb(203,174,238);
     background: radial-gradient(circle, rgba(203,174,238,1) 0%, rgba(148,233,203,0.989233193277311) 100%);
 }
 .fotoTapa{
-    padding: 1%;
-    width: 10vh;
-    height: auto;
+    padding: 3%;
 }
-.flexContainer{
-    display: inline-block;
-    justify-content: space-between;
-    padding: 1%
-}
+
 /* .boton{
     background-color: #a567f1;
     border-radius: 10%;

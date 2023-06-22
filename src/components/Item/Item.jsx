@@ -1,11 +1,12 @@
-import React from 'react'
+
 import Button from 'react-bootstrap/Button';
 import "./Item.css"
 import Card from 'react-bootstrap/Card';
 
 const Item = ({id, nombre, precio,img})=> {
     return (
-        <div className= 'flexContainer'>
+        
+        <div className='d-sm-inline-flex'>
             <Card className= 'card text-center'>
                 <Card.Img className= "fotoTapa" src= {img} alt= {nombre}/>
                 <Card.Body>

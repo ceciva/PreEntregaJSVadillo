@@ -1,3 +1,9 @@
 .carrito{
     width: 4rem;
 }
+.carritoNro{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+}
