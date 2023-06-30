@@ -3,7 +3,7 @@ const misProductos = [
     {id:"1", nombre: "Alma negra", precio: 6200, img: "../img/almaNegra1.webp", stock: 98, idCat: "1"},
     {id:"2", nombre: "Indias blancas", precio: 4200, img: "../img/indiasBlancas.webp", stock:50, idCat:"2"},
     {id:"3", nombre: "Indias blancas 2", precio: 4500, img: "../img/indiasBlancas2.webp", stock:45, idCat:"3"},
-    {id:"4", nombre: "Caballo de fuego Paris", precio:8100, img: "../img/caballoDeFuegoParis.webp", stock:100, idCat:"1"},
+    // {id:"4", nombre: "Caballo de fuego Paris", precio:8100, img: "../img/caballoDeFuegoParis.webp", stock:100, idCat:"1"},
     {id:"5", nombre: "Caballo de fuego Gaza", precio: 6300, img: "../img/caballoDeFuegoGaza.webp", stock:34, idCat:"2"},
     {id:"6", nombre: "Caballo de fuego Congo", precio: 6300, img: "../img/cabaloDeFuegoCongo.webp", stock:65, idCat:"3"},
     {id:"7", nombre: "El cuarto arcano", precio: 5600, img: "../img/cuartoArcano.webp", stock: 46, idCat:"1"},
