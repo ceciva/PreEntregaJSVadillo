@@ -1,8 +1,6 @@
-
-
 import Card from 'react-bootstrap/Card';
 
-const ItemDetail = ({id, nombre, precio, img}) => {
+const ItemDetail = ({id, nombre, precio, img, stock}) => {
   return (
     
     <div>
@@ -15,6 +13,7 @@ const ItemDetail = ({id, nombre, precio, img}) => {
             <Card.Text>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ipsum voluptate porro obcaecati aspernatur, adipisci quam perferendis quod, vel numquam cumque incidunt commodi officiis eum nisi quas vitae nam eligendi.
             </Card.Text>
+            <p>Unidades disponibles: {stock}</p>
             
           </Card.Body>
         </Card>

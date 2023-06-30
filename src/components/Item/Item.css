@@ -20,10 +20,13 @@ body {
 .fotoTapa{
     padding: 3%;
 }
-
-/* .boton{
+.textoCard{
+    color: black;
+}   
+/* 
+.boton{
     background-color: #a567f1;
     border-radius: 10%;
     color: white;  
     justify-content: center;
-} */
+}  */

@@ -5,19 +5,28 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './navBar.css'
-export const NavBar = () =>{
+import {Link, NavLink} from "react-router-dom"
+
+const NavBar = () =>{
     return (
 
     <Navbar expand="md" className="navBar" sticky = "top">
       <Container>
-        <Navbar.Brand href="#home">Todo Florencia Bonelli</Navbar.Brand>
+        <Link to="/">
+          <Navbar.Brand >Todo Florencia Bonelli</Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#link">Libros</Nav.Link>
-            <Nav.Link href="#link">E-books</Nav.Link>
-            <Nav.Link href="#link">Audio Libros</Nav.Link>
-            
+            <li>
+              <NavLink to="/categoria/1">Libros</NavLink>
+            </li>
+            <li>
+              <NavLink to="/categoria/2">E-books</NavLink>
+            </li>
+            <li>
+              <NavLink to="/categoria/3">Audio Libros</NavLink>
+            </li>
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -26,18 +35,5 @@ export const NavBar = () =>{
   );
 }
 
-
-        // <navBar>
-        //     <h1>Todo Florencia Bonelli.com</h1>
-        //     <nav>
-        //         <ul>
-        //             <li>Libros</li>
-        //             <li>e books</li>
-        //             <li>Audio libros</li>
-        //         </ul>
-        //     </nav>    
-        //     <CartWidget/>
-        // </navBar>
-    
 
 export default NavBar
