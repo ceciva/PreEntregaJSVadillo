@@ -6,13 +6,13 @@ body {
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     
 }
-.contenedorCards{
+/* .contenedorCards{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     
-}
+} */
 .card{
     background: rgb(203,174,238);
     background: radial-gradient(circle, rgba(203,174,238,1) 0%, rgba(148,233,203,0.989233193277311) 100%);
