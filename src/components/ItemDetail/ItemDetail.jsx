@@ -13,7 +13,7 @@ const ItemDetail = ({id, nombre, precio, img, stock}) => {
   const manejadorCantidad = (cantidad) =>{
     setAgregarCantidad(cantidad);
     // console.log("Productos agregados: "+ cantidad);
-    const item = {id, nombre, precio};
+    const item = {id, nombre, precio, img};
     agregarProducto(item, cantidad);
   }
   return (
@@ -26,7 +26,7 @@ const ItemDetail = ({id, nombre, precio, img, stock}) => {
             <h3>Precio: $ {precio}</h3>
             <h3>ID: {id}</h3>
             <Card.Text>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ipsum voluptate porro obcaecati aspernatur, adipisci quam perferendis quod, vel numquam cumque incidunt commodi officiis eum nisi quas vitae nam eligendi.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             </Card.Text>
             {
               agregarCantidad > 0 ? (<Link to= "/cart"> Terminar compra</Link>): (<ItemCount inicial ={1} stock= {stock} funcionAgregar = {manejadorCantidad}/>) 
