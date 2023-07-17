@@ -27,6 +27,7 @@ const ItemCount = ({inicial,stock, funcionAgregar}) => {
         </div> 
         <br></br>
         <Button variant= "outline-info" onClick  ={() => funcionAgregar (contador)}>Agregar al Carrito</Button>
+        
     </>
   )
 }

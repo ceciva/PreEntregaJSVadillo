@@ -19,6 +19,7 @@ const CartItem = ({item, cantidad}) => {
                         <th></th>
                     </tr>
                 </thead>
+                
                 <tbody>
                     <tr>
                         <td>{item.id}</td>
