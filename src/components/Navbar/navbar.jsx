@@ -6,6 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './navBar.css'
 import {Link, NavLink} from "react-router-dom"
+import { Button } from "react-bootstrap";
 
 const NavBar = () =>{
     return (
@@ -19,13 +20,19 @@ const NavBar = () =>{
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <li>
-              <NavLink to="/categoria/1">Libros</NavLink>
+              <NavLink to="/categoria/1" activeClassName="active">
+                <Button variant= "outline-info text-black">Libros</Button>
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/categoria/2">E-books</NavLink>
+              <NavLink to="/categoria/2" activeClassName="active">
+                <Button variant= "outline-info text-black">E-books</Button>
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/categoria/3">Audio Libros</NavLink>
+              <NavLink to="/categoria/3">
+                <Button variant= "outline-info text-black">Audio Libros</Button>
+              </NavLink>
             </li>
           </Nav>
         </Navbar.Collapse>

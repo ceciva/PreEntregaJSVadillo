@@ -4,7 +4,7 @@ import { db } from "../../services/config";
 import { collection, addDoc } from "firebase/firestore";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-
+import "./Checkout.css"
 
 const Checkout = () => {
     const [nombre, setNombre] = useState("");
@@ -65,11 +65,9 @@ const Checkout = () => {
     }
 
     return (
-        
-
-            <div>
+        <div>
                 <h2>Checkout</h2>
-                <Form onSubmit ={manejadorFormulario}>
+                <Form className="formCarrito" onSubmit ={manejadorFormulario}>
                     {
                         carrito.map(producto => (
                             <div key={producto.item.id}>
@@ -85,7 +83,7 @@ const Checkout = () => {
                     <p>Cantidad de libros en el carrito: {cantidadTotal}</p>
                     <h2>Total Compra: $ {total}</h2>
                     <hr />
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Group className="form" controlId="formBasicEmail">
                         <Form.Label>Nombre</Form.Label>
                         <Form.Control type="text" value={nombre} onChange={(e) => setNombre(e.target.value)} />
     
@@ -106,7 +104,7 @@ const Checkout = () => {
                         }
                     </Form.Group>
     
-                    <Button variant="outline-info" type="submit">Finalizar compra</Button>
+                    <Button variant="outline-info text-black" type="submit">Finalizar compra</Button>
                 </Form>
     
                 {

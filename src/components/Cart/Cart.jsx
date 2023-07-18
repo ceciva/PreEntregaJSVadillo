@@ -21,8 +21,10 @@ const Cart = () => {
             {carrito.map(producto => <CartItem key= {producto.id} {...producto}/>)}
             <h3>Total: $ {total}</h3>
             <h3>Cantidad total: {cantidadTotal}</h3>
-            <Button variant= "outline-info" onClick={()=> vaciarCarrito()}>Vaciar carrito</Button>
-            <Link to= "/checkout" > Finalizar compra</Link>
+            <Button variant= "outline-info text-black" onClick={()=> vaciarCarrito()}>Vaciar carrito</Button>
+            <Link to= "/checkout" activeClassName="active" > 
+                <Button variant= "outline-info text-black">Finalizar compra</Button>
+            </Link>
         </div>
     )
   

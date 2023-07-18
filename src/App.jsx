@@ -6,6 +6,7 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import { CarritoProvider } from './context/CarritoContext'
 import Cart from './components/Cart/Cart'
 import Checkout from './components/Checkout/Checkout'
+
 const App = ()=> {
   return(
     <>

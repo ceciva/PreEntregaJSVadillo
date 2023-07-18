@@ -27,7 +27,7 @@ const CartItem = ({item, cantidad}) => {
                         <td>{item.nombre}</td>
                         <td>{cantidad}</td>
                         <td>$ {item.precio}</td>
-                        <td><Button variant= "outline-info"onClick={()=> eliminarProducto(item.id)}>Eliminar</Button></td>
+                        <td><Button variant= "outline-info "onClick={()=> eliminarProducto(item.id)}>Eliminar</Button></td>
                     </tr>    
                 </tbody>
             </Table>

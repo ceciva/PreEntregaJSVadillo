@@ -12,7 +12,7 @@ const ItemDetail = ({id, nombre, precio, img, stock}) => {
 
   const manejadorCantidad = (cantidad) =>{
     setAgregarCantidad(cantidad);
-    // console.log("Productos agregados: "+ cantidad);
+    
     const item = {id, nombre, precio, img};
     agregarProducto(item, cantidad);
   }
@@ -21,15 +21,15 @@ const ItemDetail = ({id, nombre, precio, img, stock}) => {
     <div>
       <Card style={{ width: '18rem' }}>
           <Card.Img variant="top" src={img} alt= {nombre}/>
-          <Card.Body>
+          <Card.Body className= "text-center">
             <Card.Title>Nombre: {nombre}</Card.Title>
-            <h3>Precio: $ {precio}</h3>
-            <h3>ID: {id}</h3>
+            <h4>Precio: $ {precio}</h4>
+            <h4>ID: {id}</h4>
             <Card.Text>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             </Card.Text>
             {
-              agregarCantidad > 0 ? (<Link to= "/cart"> Terminar compra</Link>): (<ItemCount inicial ={1} stock= {stock} funcionAgregar = {manejadorCantidad}/>) 
+              agregarCantidad > 0 ? (<Link to= "/cart"aciveClassName="active"> Terminar compra</Link>): (<ItemCount inicial ={1} stock= {stock} funcionAgregar = {manejadorCantidad}/>) 
             }
             <p>Unidades disponibles: {stock}</p>
             
