@@ -1,9 +1,10 @@
 
 import { initializeApp } from "firebase/app";
 import {getFirestore} from "firebase/firestore";
+// "AIzaSyAJ2PrwYbR6mzETYE7D7vfYBmGjwqfaers"
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAJ2PrwYbR6mzETYE7D7vfYBmGjwqfaers",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY ,
   authDomain: "florencia-6d70d.firebaseapp.com",
   projectId: "florencia-6d70d",
   storageBucket: "florencia-6d70d.appspot.com",

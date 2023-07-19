@@ -1,5 +1,3 @@
-
-
 import CartWidget from "../CartWidget/CartWidget"
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';

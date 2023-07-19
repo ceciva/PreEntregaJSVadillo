@@ -1,7 +1,7 @@
-import {useState, useEffect} from 'react'
-import ItemDetail from '../ItemDetail/ItemDetail'
+// import {useState, useEffect} from 'react'
+// import ItemDetail from '../ItemDetail/ItemDetail'
 
-const Stock = ({id, nombre, precio,img, stock}) => {
+const Stock = ({stock}) => {
   return (
     <div>
         <p>Unidades disponibles: {stock}</p>

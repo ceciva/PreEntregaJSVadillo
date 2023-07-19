@@ -11,7 +11,9 @@ const Cart = () => {
         return (
             <>
                 <h2>No hay productos en el carrito</h2>
-                <Link to = "/">Ver Productos</Link>
+                <Link to = "/" activeClassName="active">
+                    <Button variant="outline-info text-black">Ver Productos</Button>
+                </Link>
             </>
             
           )

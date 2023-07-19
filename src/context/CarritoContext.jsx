@@ -10,11 +10,6 @@ export const CarritoProvider = ({children})=> {
     const [total, setTotal] = useState(0);
     const [cantidadTotal, setCantidadTotal]= useState(0);
 
- //Provisoriamente hago un console.log   
-    console.log(carrito)
-
-// agregar productos al carrito
-
     const agregarProducto = (item, cantidad) => {
         const productoExistente = carrito.find(prod => prod.item.id === item.id);
         if(!productoExistente){
@@ -36,7 +31,7 @@ export const CarritoProvider = ({children})=> {
         }
     }
 
-    // función para eliminar producto
+    
     const eliminarProducto = (id)=> {
         const productoEliminado = carrito.find(prod => prod.item.id === id);
         const carritoActualizado = carrito.filter(prod => prod.item.id !== id);
@@ -45,7 +40,7 @@ export const CarritoProvider = ({children})=> {
         setCantidadTotal(prev => prev- productoEliminado.cantidad);
         setTotal(prev => prev - (productoEliminado.item.precio * productoEliminado.cantidad));
     }
-    //función para vaciar carrito
+    
     const vaciarCarrito = ()=> {
         setCarrito([]);
         setCantidadTotal (0);
