@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CarritoContext } from '../../context/CarritoContext';
 import { useContext } from 'react';
-
+import '../Item/Item.css'
 
 const ItemDetail = ({id, nombre, precio, img, stock}) => {
   const [agregarCantidad, setAgregarCantidad] = useState(0);
@@ -20,7 +20,7 @@ const ItemDetail = ({id, nombre, precio, img, stock}) => {
     
     <div>
       <Card style={{ width: '18rem' }}>
-          <Card.Img variant="top" src={img} alt= {nombre}/>
+          <Card.Img variant="top" className="fotoTapa"src={img} alt= {nombre}/>
           <Card.Body className= "text-center">
             <Card.Title>Nombre: {nombre}</Card.Title>
             <h4>Precio: $ {precio}</h4>
